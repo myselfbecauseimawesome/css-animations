@@ -1,0 +1,69 @@
+body{
+background-color: hsl(0, 0%, 12%);
+}
+#box {
+    width: 500px;
+    height: 250px;
+    background-color: hsl(0, 100%, 62%);
+    font-size: 13em;
+    text-align: center;
+}
+img{
+    animation-name: colorChange, glow, slideLeft, shrink;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-play-state: running;
+    animation-timing-function: cubic-bezier(0.28, -1.48, 0.54, 2.11);
+}
+@keyframes slideLeft{
+    from{transform: translateX(300%);}
+}
+@keyframes slideRight {
+    to{transform: translateX(300%);}
+}
+@keyframes slideUp {
+    from{transform: translateY(300%);}
+}
+@keyframes slideDown {
+    to{transform: translateY(300%);}
+}
+@keyframes rotate {
+    50%{ transform: rotateZ(360deg);}
+}
+@keyframes grow{
+    50%{transform: scale(2, 2);}
+}
+@keyframes shrink{
+    50%{transform: scale(0.5, 0.5);}
+}
+@keyframes fade{
+    100%{opacity: 1;}
+}
+@keyframes colorChange{
+    0%{background-color: hsl(0, 100%, 62%)}
+    20%{background-color: hsl(35, 100%, 62%)}
+    40%{background-color: hsl(63, 100%, 62%)}
+    60%{background-color: hsl(103, 100%, 62%)}
+    90%{background-color: hsl(201, 100%, 62%)}
+    100%{background-color: hsl(268, 100%, 62%)}
+}
+@keyframes glow {
+    50%{box-shadow: 0px 0px 50px hsl(60, 100%, 50%)}
+}
+
+/*hover is when you hover it animates*/
+/*active is when you right click and hold then it animates*/
+/*steps make a stop motion design with the smaller the amount of steps being the blockier the animation*/
+/*Learn CSS animations in 15 minutes! 🎬
+14:37/15:18*/
+
+
+
+
+    /*animation-name: slideLeft;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-play-state: running;
+    animation-timing-function: cubic-bezier(0.28, -1.48, 0.54, 2.11);*/
